@@ -554,6 +554,34 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1330px) {
+  .container {
+    max-width: 1330px;
+  }
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
