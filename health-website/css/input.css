@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-secondary font-primary text-[17px] leading-8;
+  /* @apply text-secondary font-primary text-[17px] leading-8; */
 }
 
 h1,
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-primary leading-[120%];
+  /* @apply text-primary leading-[120%]; */
 }
 
 .h1 {
