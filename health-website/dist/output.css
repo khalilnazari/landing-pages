@@ -692,19 +692,20 @@ h6 {
 }
 
 .btn-accent {
-  /* @apply bg-accent text-white hover:bg-accent-secondary; */
-  background-color: rgb(59 130 246 / 0.8);
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 188 207 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .btn-accent:hover {
-  background-color: rgb(59 130 246 / 0.9);
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 171 188 / var(--tw-bg-opacity));
 }
 
 .btn-white {
-  /* @apply bg-accent text-secondary hover:bg-white/90; */
-  background-color: rgb(59 130 246 / 0.8);
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 188 207 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
 }
@@ -714,9 +715,9 @@ h6 {
 }
 
 .btn-outline {
-  /* @apply bg-transparent border-2 border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-white; */
   border-width: 2px;
-  border-color: rgb(59 130 246 / 0.6);
+  --tw-border-opacity: 1;
+  border-color: rgb(28 188 207 / var(--tw-border-opacity));
   background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
@@ -724,14 +725,14 @@ h6 {
 
 .btn-outline:hover {
   border-color: transparent;
-  background-color: rgb(59 130 246 / 0.8);
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 188 207 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .input,
 .select {
-  /* @apply w-full rounded-[10px] h-[66px] outline-none border border-[#dbdfdf] text-secondary font-light placeholder:font-light placeholer:text-secondary; */
   height: 66px;
   width: 100%;
   border-radius: 10px;
@@ -740,7 +741,7 @@ h6 {
   border-color: rgb(219 223 223 / var(--tw-border-opacity));
   font-weight: 300;
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(128 128 128 / var(--tw-text-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -748,14 +749,14 @@ h6 {
 .input::-moz-placeholder, .select::-moz-placeholder {
   font-weight: 300;
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(128 128 128 / var(--tw-text-opacity));
 }
 
 .input::placeholder,
 .select::placeholder {
   font-weight: 300;
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(128 128 128 / var(--tw-text-opacity));
 }
 
 .input {
@@ -778,7 +779,8 @@ h6 {
 .swiper-horizonal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizonal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: rgb(59 130 246 / 0.8);
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 188 207 / var(--tw-bg-opacity));
 }
 
 .faq__item.open .faq__answer {

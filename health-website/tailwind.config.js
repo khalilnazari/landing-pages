@@ -18,7 +18,7 @@ module.exports = {
         primary: "#242a2b",
         secondary: "#808080",
         accent: {
-          default: "#1cbccf",
+          DEFAULT: "#1cbccf",
           secondary: "#18abbc",
           tertiary: "#90c6cd",
         },
@@ -35,7 +35,8 @@ module.exports = {
         services: "url(../../assets/img/services/bg.svg)",
         testimonials: "url(../../assets/img/testimonials/bg.svg)",
         departments: "url(../../assets/img/departments/bg.svg)",
-        quoteRight: "url(../../assets/icons/departments/quote-right.svg)",
+        quoteLeft: "url(../../assets/icons/testimonials/quote-left.svg)",
+        quoteRight: "url(../../assets/icons/testimonials/quote-right.svg)",
       },
     },
   },
