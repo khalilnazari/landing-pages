@@ -142,10 +142,81 @@
                   type="text"
                   id="mnav-search-input"
                   placeholder="Search"
-                  class="outline-none w-[168px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic p-2"
+                  class="outline-none w-[168px] focus:border-b-2 focus:border-accent placeholder:italic p-2"
                 />
               </form>
             </div>
+          </nav>
+
+          <!-- desktop nav -->
+          <nav
+            class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]"
+          >
+            <ul class="flex gap-x-5">
+              <li>
+                <a
+                  href="#"
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                >
+                  Doctors
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                >
+                  Departments
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary hover:text-accent transition-all duration-300"
+                >
+                  Contacts
+                </a>
+              </li>
+            </ul>
+
+            <form class="flex relative gap-x-[20px]">
+              <label
+                for="search-form-menu"
+                class="flex items-center justify-center group"
+              >
+                <i class="ri-search-line text-2xl text-accent"></i>
+                <input
+                  type="text"
+                  id="search-form-menu"
+                  class="outline-none w-[180px] border-transparent border-b-2 focus:border-accent placeholder:italic p-2"
+                  placeholder="Search"
+                />
+              </label>
+            </form>
           </nav>
         </div>
       </div>
