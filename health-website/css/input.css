@@ -77,3 +77,7 @@ h6 {
 .faq__item.open .faq__answer {
   @apply h-full;
 }
+
+.swiper-pagination-bullet-active {
+  background: #56bec9 !important;
+}
