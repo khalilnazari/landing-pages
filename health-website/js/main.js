@@ -56,3 +56,42 @@ const sr = ScrollReveal({
 sr.reveal(".hero__text", { origin: "top" });
 
 // ScrollReveal().reveal(".hero__text");
+
+// Stats count animation
+const createOdometer = (el, value) => {
+  console.log(el);
+  const odometer = new Odometer({
+    el: el,
+    value: 0,
+  });
+
+  let hasRun = false;
+
+  const options = {
+    threshold: [0, 0.9],
+  };
+
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (!hasRun) {
+          odometer.update(value);
+          hasRun = true;
+        }
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback, options);
+  observer.observe(el);
+};
+
+const happyPatientsCount = document.querySelector(".happy-patients-count");
+const branchesCount = document.querySelector(".branches-count");
+const seniorDoctorsCount = document.querySelector(".senior-doctors-count");
+const yearExperienceCount = document.querySelector(".year-experience-count");
+
+createOdometer(happyPatientsCount, 3216);
+createOdometer(branchesCount, 56);
+createOdometer(seniorDoctorsCount, 12);
+createOdometer(yearExperienceCount, 30);
