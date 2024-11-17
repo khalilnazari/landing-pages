@@ -4,6 +4,7 @@
 
 body {
   @apply text-secondary font-primary text-[17px] leading-8;
+  overflow-x: hidden;
 }
 
 h1,
